@@ -4,6 +4,7 @@
     "description": "A small library for reading rock grouting files",
     "main": "src/index.ts",
     "scripts": {
+        "rm":"rm -rf dist",
         "build": "npm run build-bundles && npm run types",
         "build-bundles": "npm run esbuild-iife && npm run esbuild-esm && npm run esbuild-iife-min && npm run esbuild-esm-min ",
         "postpack": "",
