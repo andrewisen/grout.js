@@ -22,7 +22,8 @@
 
 [Rock Grouting Toolkit](https://app.rockgroutingtoolkit.com) is using `Grout.js` to generate each graph.
 
-![screenshot](http://github.andrewisen.se/grout/rgt.gif)
+<img src="https://github.andrewisen.se/grout/rgt.gif"
+         alt="Screenshot">
 
 This module helps you create a similar application.
 
