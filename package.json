@@ -11,7 +11,7 @@
         "esbuild-iife-min": "esbuild src/index.ts --bundle --minify --outfile=dist/grout.min.js --format=iife",
         "esbuild-esm": "esbuild src/index.ts --bundle --outfile=dist/grout.module.js --format=esm",
         "esbuild-esm-min": "esbuild src/index.ts --bundle --minify --outfile=dist/grout.module.min.js --format=esm",
-        "types": "npx typescript src/index.ts --declaration --allowJs --emitDeclarationOnly --outDir dist",
+        "types": "npx tsc src/index.ts --declaration --allowJs --emitDeclarationOnly --outDir dist",
         "test": "jest"
     },
     "repository": {
