@@ -4,8 +4,13 @@
     "description": "A small library for reading rock grouting files",
     "main": "src/index.ts",
     "scripts": {
-        "build": "npm run esbuild && npm run types",
-        "esbuild": "esbuild src/index.ts --bundle --outfile=dist/grout.js",
+        "build": "npm run build-bundles && npm run types",
+        "build-bundles": "npm run esbuild-iife && npm run esbuild-esm && npm run esbuild-iife-min && npm run esbuild-esm-min ",
+        "postpack": "",
+        "esbuild-iife": "esbuild src/index.ts --bundle --outfile=dist/grout.js --format=iife",
+        "esbuild-iife-min": "esbuild src/index.ts --bundle --minify --outfile=dist/grout.min.js --format=iife",
+        "esbuild-esm": "esbuild src/index.ts --bundle --outfile=dist/grout.module.js --format=esm",
+        "esbuild-esm-min": "esbuild src/index.ts --bundle --minify --outfile=dist/grout.module.min.js --format=esm",
         "types": "npx typescript src/index.ts --declaration --allowJs --emitDeclarationOnly --outDir dist",
         "test": "jest"
     },
@@ -26,8 +31,8 @@
     "homepage": "https://github.com/andrewisen/grout.js#readme",
     "dependencies": {},
     "devDependencies": {
-        "esbuild": "^0.11.1",
         "@types/jest": "^26.0.22",
+        "esbuild": "^0.11.1",
         "jest": "^26.6.3",
         "ts-jest": "^26.5.4",
         "typescript": "^4.2.3"
