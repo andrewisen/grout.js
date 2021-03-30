@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/andrewisen/grout.js/issues"
   },
-  "homepage": "https://github.com/andrewisen/grout.js#readme"
+  "homepage": "https://github.com/andrewisen/grout.js#readme",
+  "dependencies": {
+    "esbuild": "^0.11.1"
+  }
 }
