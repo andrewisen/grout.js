@@ -1,4 +1,2 @@
-const main = () => {
-    console.log("hello esbuild");
-};
-main();
+const add = (a: number, b: number): number => a + b;
+export { add };
