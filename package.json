@@ -4,7 +4,9 @@
     "description": "A small library for reading rock grouting files",
     "main": "src/index.ts",
     "scripts": {
-        "build": "esbuild src/index.ts --bundle --outfile=dist/grout.js",
+        "build": "npm run esbuild && npm run types",
+        "esbuild": "esbuild src/index.ts --bundle --outfile=dist/grout.js",
+        "types": "npx typescript src/index.ts --declaration --allowJs --emitDeclarationOnly --outDir dist",
         "test": "jest"
     },
     "repository": {
