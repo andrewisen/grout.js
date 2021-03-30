@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/andrewisen/grout.js/blob/master/resources/logo.png?raw=true" alt="Grout.js" width="200">
+  <img src="https://raw.githubusercontent.com/andrewisen/grout.js/blob/master/resources/logo.png" alt="Grout.js" width="200">
   <br>
   Grout.js
   <br>
@@ -21,7 +21,8 @@
 ## Rock Grouting Toolkit
 
 [Rock Grouting Toolkit](https://app.rockgroutingtoolkit.com) is using `Grout.js` to generate each graph.
-<img src="https://github.com/andrewisen/grout.js/blob/master/resources/screenshot.gif?raw=true"
+
+<img src="https://raw.githubusercontent.com/andrewisen/grout.js/blob/master/resources/screenshot.gif"
          alt="Screenshot">
 
 This module helps you create a similar application.
