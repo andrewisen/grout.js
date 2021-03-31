@@ -54,7 +54,8 @@ class Grout {
     /**
      * Get metadata
      */
-    getMetadata(key: string): string | undefined {
+    getMetadata(key: string): string {
+        // @ts-ignore
         return this.metadata[key];
     }
     /**
