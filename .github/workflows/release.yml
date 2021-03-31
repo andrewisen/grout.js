@@ -15,9 +15,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
+            uses: actions/setup-node@v2
               with:
                   node-version: ${{ matrix.node-version }}
+                  registry-url: 'https://registry.npmjs.org'
+                  scope: '@andrewisen'
             - run: npm ci
             - run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -32,5 +34,5 @@ jobs:
                   git add -A
                   git commit -m "Add dist" -a
             - run: npm publish
-            env:
-                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                env:
+                    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
