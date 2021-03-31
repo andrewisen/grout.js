@@ -36,15 +36,24 @@ You can install Grout.js from a CDN or NPM. Note that it's named `grout-js`.
 You can download the latest version of Grout.js from the content delivery network (CDN) [jsDelivr](https://www.jsdelivr.com).
 
 Regular:
-`<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.min.js"></script>`
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.min.js"></script>
+```
 
 As Module:
-`<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.module.min.js"></script>`
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.module.min.js"></script>
+```
 
 ### NPM
 
 You can use NPM to install Grout.js. Simply run:
-`npm i grout-js`
+
+```console
+npm i grout-js
+```
 
 ## How To Use
 
