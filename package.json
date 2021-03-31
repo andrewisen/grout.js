@@ -1,6 +1,6 @@
 {
     "name": "grout.js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A small module for reading rock grouting files",
     "main": "dist/grout.module.min.js",
     "scripts": {
