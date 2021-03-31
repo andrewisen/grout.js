@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A small (~1KB) JavaScript module for reading <a href="https://www.bevercontrol.com/en" target="_blank">Bever Control's</a> rock grouting files.</h4>
+<h4 align="center">A small (~2KB) JavaScript module for reading <a href="https://www.bevercontrol.com/en" target="_blank">Bever Control's</a> rock grouting files.</h4>
 
 <p align="center">
     <img src="https://github.com/andrewisen/grout.js/actions/workflows/ci.yml/badge.svg"
