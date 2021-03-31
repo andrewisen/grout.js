@@ -34,5 +34,5 @@ jobs:
                   git add -A
                   git commit -m "Add dist" -a
             - run: npm publish
-            - env:
+              env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
