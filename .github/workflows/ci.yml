@@ -1,6 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Grout.js CI
+name: 🤖 Grout.js - Push & PR
 
 on:
     push:
@@ -10,7 +8,8 @@ on:
     workflow_dispatch:
 
 jobs:
-    build:
+    test:
+        name: 🔍 Testing
         runs-on: ubuntu-latest
         strategy:
             matrix:
@@ -18,24 +17,8 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v1
+              uses: actions/setup-node@v2
               with:
                   node-version: ${{ matrix.node-version }}
             - run: npm ci
-            - run: |
-                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git config --local user.name "github-actions[bot]"
             - run: npm test
-            - run: |
-                  npm run rm
-                  git add -A
-                  git commit -m "Remove dist" -a
-            ## Git commit remove dist
-            - run: npm run build
-            - run: |
-                  git add -A
-                  git commit -m "Add dist" -a
-            - name: Push changes
-              uses: ad-m/github-push-action@master
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
