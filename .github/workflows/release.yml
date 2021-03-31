@@ -15,9 +15,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Node.js ${{ matrix.node-version }}
-            uses: actions/setup-node@v2
-            with:
-                node-version: ${{ matrix.node-version }}
+                uses: actions/setup-node@v2
+                with:
+                    node-version: ${{ matrix.node-version }}
             - run: npm ci
             - run: |
                 git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
