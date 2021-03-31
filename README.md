@@ -29,14 +29,29 @@ This module helps you create a similar application.
 
 ## Install
 
-`NPM package is coming soon...`
+You can install Grout.js from a CDN or NPM. Note that it's named `grout-js`.
+
+### CDN
+
+You can download the latest version of Grout.js from the content delivery network (CDN) [jsDelivr](https://www.jsdelivr.com).
+
+Regular:
+`<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.min.js"></script>`
+
+As Module:
+`<script src="https://cdn.jsdelivr.net/gh/andrewisen/grout.js/dist/grout.module.min.js"></script>`
+
+### NPM
+
+You can use NPM to install Grout.js. Simply run:
+`npm i grout-js`
 
 ## How To Use
 
 Regular:
 
 ```javascript
-import * from 'grout.min.js';
+import * from 'grout-js';
 var grout = new Grout();
 var operatingLogs = groutFile.init(xmlString);
 ```
@@ -44,12 +59,16 @@ var operatingLogs = groutFile.init(xmlString);
 As Module:
 
 ```javascript
-import { Grout } from 'grout.module.min.js';
+import { Grout } from 'grout-js';
 var grout = new Grout();
 var operatingLogs = groutFile.init(xmlString);
 ```
 
 `Todo`
+
+## Example
+
+`Coming soon`
 
 ## Contact
 
