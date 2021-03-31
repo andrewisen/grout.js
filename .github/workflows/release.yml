@@ -20,17 +20,17 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - run: npm ci
             - run: |
-                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git config --local user.name "github-actions[bot]"
+                git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                git config --local user.name "github-actions[bot]"
             - run: npm test
             - run: |
-                  npm run rm
-                  git add -A
-                  git commit -m "Remove dist" -a
+                npm run rm
+                git add -A
+                git commit -m "Remove dist" -a
             - run: npm run build
             - run: |
-                  git add -A
-                  git commit -m "Add dist" -a
+                git add -A
+                git commit -m "Add dist" -a
             - uses: ad-m/github-push-action@master
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
